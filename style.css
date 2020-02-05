@@ -2,10 +2,15 @@
     margin: 0;
     padding: 0;
     font-family: "GothamPro", sans-serif;
+    box-sizing: border-box;
 }
 
 .clear {
     clear: both;
+}
+
+#wrapper {
+    overflow: hidden;
 }
 
 a {
@@ -29,6 +34,7 @@ a {
 /* --------------------navigation------------------------*/
 
 #navigation {
+    height: 80px;
     width: 100%;
     background: white;
     /*box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);*/
@@ -39,23 +45,32 @@ a {
     padding: 16px;
     z-index: 9;
     box-sizing: border-box;
+    position: relative;
 }
 
 #navigation .logo {
-    width: 15%;
     float: left;
+    font-size: 35px;
+    padding: 0 30px 0 0;
+    font-weight: bold;
+}
+
+#navigation .checkbtn {
+    font-size: 30px;
+    position: absolute;
+    margin-left: 2vw;
+    cursor: pointer;
+    display: none;
 }
 
 #navigation .menu {
-    width: 85%;
-    float: left;
     background: white;
 }
 
 #navigation .menu ul {
     margin: 0;
     list-style: none;
-    display: inline-block;
+    display: inline;
     font-size: 16px;
     font-family: "GothamPro-Medium", sans-serif !important;
     font-weight: normal !important;
@@ -94,16 +109,26 @@ a {
     display: block;
 }
 
-#navigation .menu button {
-    float: right;
+#navigation button {
+    position: absolute;
     padding: 12px 20px;
-    margin-right: 25px;
+    right: 20px;
+    top: 15px;
     border: 3px solid #ff6f61;
     font-weight: bold;
     border-radius: 5px;
     color: #ff6f61;
     transition-duration: 300ms;
     background: white;
+}
+
+#navigation .small {
+    padding: 7.5px 15px;
+    display: none;
+}
+
+#navigation .big {
+    display: block;
 }
 
 #navigation .menu button:hover {
@@ -137,7 +162,6 @@ a {
 #banner.banner_background {
     background-repeat: no-repeat;
     background-position: center;
-    height: 100vh;
     background-size: cover;
 }
 
@@ -952,7 +976,6 @@ a {
 /* --------------------footer------------------------*/
 
 #footer {
-    height: 487px;
     background: #393B3F;
     padding: 60px 0 40px;
     font-size: 19px;
@@ -963,7 +986,6 @@ a {
 
 #footer .upper_footer {
     align-items: center;
-    height: 100%;
 }
 
 #footer .container .row {
@@ -1079,15 +1101,39 @@ a {
     color: #62656A !important;
 }
 
-@media (max-width: 1000px) {
-    .ready_for_the_brand .brand-left {
-        width: 50%;
-        height: 100%;
-        background: #ff6f61;
-        padding: 0;
-        box-sizing: border-box;
-        float: left;
+@media (max-width: 1024px) {
+    #navigation {
+        text-align: center;
+        padding: 20px 0 0 0;
+    }
+    #navigation .logo {
+        font-size: 30px;
+        display: inline-block;
+        float: none;
+    }
+    #navigation ul li a {
+        font-size: 16px;
+    }
+    #navigation .checkbtn {
+        display: block;
+    }
+    #navigation #menu ul li {
+        margin-top: 10px;
+        display: block;
+    }
+    .show_menu {
+        display: block;
+    }
+    .hide_menu {
+        display: none;
     }
 }
 
-s
+@media (max-width: 470px) {
+    #navigation .small {
+        display: block;
+    }
+    #navigation .big {
+        display: none;
+    }
+}

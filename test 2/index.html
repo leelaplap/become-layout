@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="my.css">
+    <script >
+        $(document).ready(function() {
+
+            // JQUERY NAV TOGGLE
+            $('#menu').bind('click',function(event){
+                $('#mainnav ul').slideToggle();
+            });
+
+            $(window).resize(function(){
+                var w = $(window).width();
+                if(w > 768) {
+                    $('#mainnav ul').removeAttr('style');
+                }
+            });
+
+        });
+
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<body>
+<header>
+    <div id="logo"><h1><a href="#">Logo</a></h1></div>
+</header>
+
+<nav id="mainnav" class="group">
+    <div id="menu">&#x2261; Menu</div>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">News</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+</body>
+</html>
