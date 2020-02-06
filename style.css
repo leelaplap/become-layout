@@ -861,6 +861,10 @@ a {
     color: #ff6f61;
 }
 
+.table .become_special {
+    font-size: 32px;
+}
+
 .table span {
     font-size: 24px;
 }
@@ -1610,22 +1614,71 @@ a {
         padding: 11px 1px 0 0;
         box-sizing: border-box;
     }
-}
-
-.become_social .feedback .col .icon_ins {
-    padding: 12px;
-    background: white;
-    box-sizing: border-box;
-}
-
-.become_social .feedback .col .comment {
-    padding: 0 12px;
-    box-sizing: border-box;
-    font-size: 0.9rem;
-    background: white;
-    letter-spacing: 0.4px;
-    line-height: 1.2;
-}
-
-
+    .become_social .feedback .col .icon_ins {
+        padding: 12px;
+        background: white;
+        box-sizing: border-box;
+    }
+    .become_social .feedback .col .comment {
+        padding: 0 12px;
+        box-sizing: border-box;
+        font-size: 0.9rem;
+        background: white;
+        letter-spacing: 0.4px;
+        line-height: 1.2;
+    }
+    /* --------------------table------------------------*/
+    /* --------------------table------------------------*/
+    /* --------------------table------------------------*/
+    /* --------------------table------------------------*/
+    /* --------------------table------------------------*/
+    .table {
+        margin: 60px auto;
+    }
+    .table .column_inner {
+        padding: 0 15px;
+    }
+    .table .column_inner .wrapper {
+        max-width: 1210px;
+        margin: auto;
+    }
+    .table .column_inner .wrapper h1 {
+        margin: 0 auto 48px;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: bolder;
+        line-height: 1.3;
+        color: rgba(2, 2, 2, 0.8);
+    }
+    .table table {
+        width: 100%;
+        text-align: center;
+    }
+    .table td {
+        border: 1px solid black;
+        padding: 8px;
+    }
+    .table th {
+        border: 1px solid black;
+        padding: 8px;
+        text-align: left;
+    }
+    .table .become-tick {
+        color: #ff6f61;
+    }
+    .table thead {
+        font-size: 1rem !important;
+    }
+    .table .become_special {
+        font-size: 1.2rem !important;
+    }
+    .table span {
+        font-size: 1.5rem;
+    }
+    .table tbody th {
+        font-size: 0.8rem;
+    }
+    .table table tbody .small {
+        font-size: 0.8rem;
+    }
 }
