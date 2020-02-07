@@ -53,7 +53,6 @@ a {
     padding: 16px;
     z-index: 9;
     box-sizing: border-box;
-    position: relative;
 }
 
 #navigation .logo {
@@ -1298,6 +1297,129 @@ a {
     margin: 0 0 10px;
     line-height: 1.6;
     letter-spacing: 1.1px;
+}
+
+
+/* --------------------how_we_manage------------------------*/
+
+
+/* --------------------how_we_manage------------------------*/
+
+
+/* --------------------how_we_manage------------------------*/
+
+
+/* --------------------how_we_manage------------------------*/
+
+
+/* --------------------how_we_manage------------------------*/
+
+#body_content .how_we_manage {
+    color: #020202;
+    padding: 60px 0;
+    text-align: center;
+}
+
+#body_content .how_we_manage .wrapper {
+    max-width: 1240px;
+    margin: auto;
+}
+
+.how_we_manage .wrapper .column_inner {
+    max-width: 827px;
+    padding: 0 15px;
+    margin: auto;
+}
+
+.how_we_manage .wrapper h1 {
+    margin: 0 auto 24px;
+    font-size: 2.8rem;
+    font-weight: bolder;
+    line-height: 1.1;
+}
+
+.how_we_manage .wrapper p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    letter-spacing: 1.4px;
+    margin: 0 0 18px;
+}
+
+.how_we_manage .wrapper .column_inner_inner {
+    max-width: 531px;
+    padding: 0 15px;
+    margin: auto;
+}
+
+
+/* --------------------faq------------------------*/
+
+
+/* --------------------faq------------------------*/
+
+
+/* --------------------faq------------------------*/
+
+
+/* --------------------faq------------------------*/
+
+
+/* --------------------faq------------------------*/
+
+#body_content .faq {
+    color: #020202;
+    padding: 60px 0;
+}
+
+#body_content .faq .wrapper {
+    max-width: 1240px;
+    margin: auto
+}
+
+.faq .wrapper .column_inner {
+    max-width: 620px;
+    padding: 0 15px;
+    margin: auto;
+}
+
+.faq .wrapper h1 {
+    margin: 0 auto 24px;
+    font-size: 2.8rem;
+    text-align: center;
+    font-weight: bolder;
+    line-height: 1.1;
+}
+
+.faq .wrapper .panel {
+    background: #edecec;
+    margin: 0 0 10px;
+}
+
+.faq .wrapper .panel .panel_question a {
+    width: 100%;
+    font-size: 20px;
+    margin: 0 20px;
+    padding: 24px 0;
+}
+
+.faq .wrapper .panel .panel_question i {
+    margin-left: 108px;
+}
+
+.faq .wrapper .panel .panel_answer p {
+    padding: 25px 20px;
+    font-size: 1.2rem;
+    color: #666666;
+    line-height: 1.6;
+    letter-spacing: 1.3px;
+}
+
+.hide_answer {
+    display: none;
+}
+
+.show_answer {
+    display: block;
 }
 
 
