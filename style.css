@@ -543,6 +543,7 @@ a {
 
 #body_content .payment_right .way_1 .wrapper {
     width: 100%;
+    background: white;
     padding: 30px 24px;
     box-sizing: border-box;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -1px rgba(0, 0, 0, .06);
@@ -576,8 +577,6 @@ a {
 }
 
 #body_content .payment_right button {
-    width: 140px;
-    height: 46px;
     font-size: 14px;
     font-weight: bold;
     padding: 13px 19px;
@@ -1121,6 +1120,203 @@ a {
     font-family: "GothamPro-Medium", sans-serif !important;
     color: #62656A !important;
 }
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/* --------------------pricing_page------------------------*/
+
+
+/* --------------------pricing_page------------------------*/
+
+
+/* --------------------pricing_page------------------------*/
+
+
+/* --------------------pricing_page------------------------*/
+
+
+/* --------------------pricing_page------------------------*/
+
+#body_content .payment-pricing {
+    background: #f3f3f3;
+}
+
+#body_content .payment-pricing .payment .payment_right .get_started_pricing button {
+    background: #ff6f61;
+    color: white;
+    border: 2px solid #ff6f61;
+}
+
+#body_content .payment-pricing .payment .payment_right .get_started_pricing button:hover {
+    color: #ff6f61;
+    background: white;
+}
+
+
+/* --------------------what_included------------------------*/
+
+
+/* --------------------what_included------------------------*/
+
+
+/* --------------------what_included------------------------*/
+
+
+/* --------------------what_included------------------------*/
+
+
+/* --------------------what_included------------------------*/
+
+#body_content .what_included {
+    max-width: 1240px;
+    margin: auto;
+    padding: 60px 60px 45px;
+}
+
+.what_included .wrapper h1 {
+    margin: 0 auto 48px;
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: bolder;
+    line-height: 1.1;
+    color: rgba(2, 2, 2, 0.8);
+}
+
+.what_included .wrapper .row {
+    margin: 2rem 0 0;
+}
+
+.what_included .wrapper .row .image {
+    width: 180px;
+    padding: 0 15px;
+    float: left;
+}
+
+.what_included .wrapper .row .vc_column_inner {
+    float: left;
+    max-width: 746px;
+    padding: 0 15px;
+}
+
+.what_included .wrapper .four_step .row .smaller {
+    max-width: 400px !important;
+    float: left;
+    padding: 0 15px;
+}
+
+.what_included .wrapper .four_step .or {
+    float: left;
+    padding: 115px 15px;
+}
+
+.what_included .wrapper .row h3 {
+    font-size: 1.4rem;
+    margin: 1rem 0 0;
+}
+
+.what_included .wrapper .row h2 {
+    font-size: 2rem;
+    margin: 0 0 20px;
+    color: #ff6f61;
+}
+
+.what_included .wrapper .row p {
+    font-size: 1.2rem;
+    margin: 0 0 1.5rem;
+    letter-spacing: 1.3px;
+    line-height: 1.6;
+}
+
+
+/* --------------------become_vs_competitors------------------------*/
+
+
+/* --------------------become_vs_competitors------------------------*/
+
+
+/* --------------------become_vs_competitors------------------------*/
+
+
+/* --------------------become_vs_competitors------------------------*/
+
+
+/* --------------------become_vs_competitors------------------------*/
+
+#body_content .become_vs_competitors {
+    background: #f3f3f3;
+    color: #020202;
+    padding: 60px 0;
+}
+
+#body_content .become_vs_competitors .wrapper {
+    max-width: 1240px;
+    margin: auto;
+}
+
+.become_vs_competitors .wrapper .column_inner {
+    max-width: 620px;
+    padding: 0 15px;
+    margin: auto;
+}
+
+.become_vs_competitors .wrapper h1 {
+    margin: 0 auto 24px;
+    font-size: 2.8rem;
+    font-weight: bolder;
+    line-height: 1.1;
+}
+
+.become_vs_competitors .wrapper .progress_bar {
+    margin-bottom: 20px;
+}
+
+.become_vs_competitors .wrapper .progress_bar .w3 {
+    float: left;
+}
+
+.become_vs_competitors .wrapper .progress_bar span {
+    float: left;
+    font-size: 19px;
+    margin-left: 2.2rem;
+}
+
+.become_vs_competitors .wrapper .bar {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.become_vs_competitors .wrapper h6 {
+    font-size: 18px !important;
+    margin: 0;
+    font-weight: 500;
+}
+
+.become_vs_competitors .wrapper .column_inner>p {
+    font-size: 1.2rem;
+    margin: 0 0 10px;
+    line-height: 1.6;
+    letter-spacing: 1.1px;
+}
+
+
+/* --------------------------------------------------------------------------------------------------------------------------------*/
+
+
+/* --------------------media------------------------*/
+
+
+/* --------------------media------------------------*/
+
+
+/* --------------------media------------------------*/
+
+
+/* --------------------media------------------------*/
+
+
+/* --------------------media------------------------*/
 
 @media (max-width: 1024px) {
     #navigation {
