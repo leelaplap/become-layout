@@ -22,6 +22,10 @@ a {
     background: white;
 }
 
+.choose_the_page {
+    color: #ff6f61 !important;
+}
+
 
 /* --------------------navigation------------------------*/
 
@@ -43,9 +47,9 @@ a {
     background: white;
     /*box-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);*/
     /*Đổ bóng cho menu*/
-    position: fixed;
     top: 0;
     left: 0;
+    position: fixed;
     padding: 16px;
     z-index: 9;
     box-sizing: border-box;
@@ -135,7 +139,7 @@ a {
     display: block;
 }
 
-#navigation .menu button:hover {
+#navigation button:hover {
     background: #ff6f61;
     color: white;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
@@ -172,23 +176,27 @@ a {
     max-width: 1210px;
     z-index: 5;
     padding: 150px 0;
+    color: white;
 }
 
 #banner .column_left {
     width: 50%;
     float: left;
-    color: white;
 }
 
 #banner .column_left_content {
     padding: 0 48px 0 0;
 }
 
+#banner .column_right_content {
+    padding: 0 0 0 100px;
+}
+
 #banner .column_left_content_detail {
     padding: 0 15px;
 }
 
-#banner .column_left .row_1 {
+#banner .row_1 {
     line-height: 50px;
     margin: 0 0 24px;
     font-size: 26px;
@@ -196,14 +204,14 @@ a {
     font-weight: normal !important;
 }
 
-#banner .column_left .row_2 {
+#banner .row_2 {
     font-size: 19.2px;
     font-family: "GothamPro-Medium", sans-serif !important;
     font-weight: normal !important;
     margin: 0 0 24px;
 }
 
-#banner .row_3 {
+#banner .column_left .row_3 {
     margin-bottom: 24px;
 }
 
@@ -221,9 +229,10 @@ a {
     padding: 16px 25px;
 }
 
-#banner .row_3 button:hover {
+#banner .column_left .row_3 button:hover {
     background: #ff6f61;
     color: white;
+    border: 2px solid white;
     box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -240,6 +249,20 @@ a {
     float: right;
     padding: 0 15px;
     box-sizing: border-box;
+}
+
+#banner .column_right .row_1 h1 {
+    font-size: 2.8rem;
+}
+
+#banner .column_right .row_3 button {
+    background: #34d3db;
+    color: white;
+}
+
+#banner .column_right .row_3 button:hover {
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+    background: rgb(262, 192, 99);
 }
 
 
@@ -667,6 +690,7 @@ a {
 }
 
 .star .column_inner h1 {
+    color: rgba(2, 2, 2, 0.8);
     margin: 0 auto 16px;
     text-align: center;
     font-size: 2.8rem;
@@ -720,6 +744,7 @@ a {
 
 .star .column_inner .wrapper .image {
     width: 88px;
+    height: 85px;
     float: left;
     margin-right: 25px;
 }
@@ -727,6 +752,7 @@ a {
 .star .column_inner .wrapper .text {
     font-size: 0.9rem;
     font-weight: 100;
+    color: #6a6c77;
     letter-spacing: 2px;
 }
 
@@ -993,7 +1019,6 @@ a {
     float: left;
     width: 33.25%;
     display: block;
-    height: 100%;
 }
 
 #footer .content_1 {
@@ -1137,7 +1162,7 @@ a {
     }
 }
 
-@media (max-width: 470px) {
+@media (max-width: 570px) {
     #navigation .small {
         display: block;
     }
@@ -1147,16 +1172,18 @@ a {
     #banner>img {
         position: initial;
     }
-    #banner .column_left {
+    #banner .column_left,
+    #banner .column_right {
         width: 100%;
         float: none;
         color: black !important;
         text-align: center;
     }
-    #banner .column_left_content {
+    #banner .column_left_content,
+    #banner .column_right_content {
         padding: 0;
     }
-    #banner .column_left .row_1 {
+    #banner .row_1 {
         padding-top: 35px;
         line-height: 2.6rem;
         margin: 0 0 24px;
@@ -1164,7 +1191,7 @@ a {
         font-family: "GothamPro-Medium", sans-serif !important;
         font-weight: bolder;
     }
-    #banner .column_left .row_2 {
+    #banner .row_2 {
         font-size: 16px;
         font-family: "GothamPro-Medium", sans-serif !important;
         font-weight: normal !important;
@@ -1192,6 +1219,16 @@ a {
         background: white;
         color: #ff6f61;
         box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+    }
+    #banner .column_right .row_3 button {
+        background: #34d3db;
+        color: white;
+        border: 2px solid #34d3db;
+    }
+    #banner .column_right .row_3 button:hover {
+        box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5);
+        background: white;
+        color: #34d3db;
     }
     #banner .row_4 {
         margin: 8px 0 24px;
@@ -1551,6 +1588,7 @@ a {
     }
     .star .run_scroller .col .container {
         background: white;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, .1), 0 2px 4px -1px rgba(0, 0, 0, .06);
     }
     .star .column_inner .wrapper .number_star {
         margin: 0 0 8px;
@@ -1564,6 +1602,7 @@ a {
     }
     .star .column_inner .wrapper .image {
         width: 88px;
+        height: 85px;
         float: left;
         margin-right: 25px;
     }
@@ -1680,5 +1719,148 @@ a {
     }
     .table table tbody .small {
         font-size: 0.8rem;
+    }
+    /* --------------------terms_conditions------------------------*/
+    /* --------------------terms_conditions------------------------*/
+    /* --------------------terms_conditions------------------------*/
+    /* --------------------terms_conditions------------------------*/
+    /* --------------------terms_conditions------------------------*/
+    .terms_conditions {
+        padding-bottom: 60px;
+        margin: auto;
+        box-sizing: border-box;
+    }
+    .terms_conditions .column_inner {
+        padding: 0 25px;
+    }
+    .terms_conditions .column_inner .wrapper {
+        max-width: 1210px;
+        margin: auto;
+        text-align: center;
+    }
+    .terms_conditions .risk_free {
+        max-width: 827px;
+        padding-bottom: 60px;
+        box-sizing: border-box;
+        text-align: center;
+        margin: auto;
+    }
+    .terms_conditions .risk_free h1 {
+        font-size: 2rem;
+        margin: 0 0 24px;
+        line-height: 1.3;
+    }
+    .terms_conditions .risk_free p {
+        font-size: 1rem;
+        margin: 0 0 24px;
+        line-height: 1.6;
+        letter-spacing: 1.1px;
+    }
+    .terms_conditions .risk_free button {
+        width: 264px;
+        height: 53.4px;
+        font-size: 19px;
+        margin: 0 auto;
+        background: #ff6f61;
+        color: white;
+        border-radius: 7px;
+        transition-duration: 300ms;
+        font-weight: bolder;
+    }
+    .terms_conditions .risk_free button:hover {
+        background: white;
+        color: #ff6f61;
+        border: 2px solid #ff6f61;
+    }
+    .terms_conditions .term {
+        text-align: left !important;
+    }
+    .terms_conditions .term p {
+        font-size: 1rem;
+        font-weight: bolder;
+        margin: 0 0 24px;
+        line-height: 1.7;
+    }
+    .terms_conditions .term em,
+    .terms_conditions .term i {
+        font-size: 0.8rem;
+        letter-spacing: 1.3px;
+        line-height: 2;
+        color: #020202;
+    }
+    /* --------------------footer------------------------*/
+    /* --------------------footer------------------------*/
+    /* --------------------footer------------------------*/
+    /* --------------------footer------------------------*/
+    /* --------------------footer------------------------*/
+    #footer {
+        background: #393B3F;
+        padding: 60px 0 0;
+        font-size: 19px;
+        box-sizing: border-box;
+        font-family: "GothamPro-Medium", sans-serif !important;
+        color: #ffffff;
+    }
+    #footer .upper_footer {
+        align-items: center;
+    }
+    #footer .container .row {
+        max-width: 1210px;
+        margin: 0 auto;
+    }
+    #footer .upper_footer .container .row .col-4 {
+        float: left;
+        width: 100%;
+        display: block;
+    }
+    #footer .container .col-4 i {
+        font-size: 25px;
+    }
+    #footer .content_1 {
+        color: #ffffff;
+        font-size: 20px;
+        font-family: "GothamPro-Medium", sans-serif !important;
+        margin: 0 55px 30px;
+    }
+    #footer h5 {
+        margin: 0 0 20px;
+        font-size: 16px;
+    }
+    #footer .content_1 ul {
+        margin: 0;
+        list-style: none;
+        display: inline-block;
+    }
+    #footer .content_1 ul li {
+        float: left;
+        margin: 0;
+        padding: 0;
+        display: block;
+        width: 45px;
+        height: 40px;
+        font-size: 1.6rem;
+    }
+    #footer .content_2 {
+        padding: 0 15px 30px;
+        border-left: 0.1px solid darkgrey;
+        border-right: 0.1px solid darkgrey;
+    }
+    #footer .content_2 #text-2 {
+        margin: 0 40.6625px 30px;
+    }
+    #footer .content_2 #text-2 h5 {
+        margin: 0 0 20px;
+        color: #ffffff;
+        font-size: 16px;
+        font-family: "GothamPro-Medium", sans-serif !important;
+    }
+    #footer .content_2 #text-2 p {
+        margin: 8px 0 0;
+        font-size: 15px;
+    }
+    #footer .content_2 #text-3 {
+        margin: 0 40.6625px 0;
+        font-size: 15px;
+        line-height: 25px;
     }
 }

@@ -5,54 +5,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Document</title>
+    <!-- <script src="my.js"></script> -->
+    <title>Home - Become</title>
     <link rel="stylesheet" href="./style.css" type="text/css" />
-    <!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">-->
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+    <script src="my.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<script>
-    function showMenu() {
-
-        var x = document.getElementById('menu');
-        if (x.classList.contains('hide_menu')) {
-            x.classList.add('show_menu');
-            x.classList.remove('hide_menu');
-        } else {
-            x.classList.add('hide_menu');
-            x.classList.remove('show_menu');
-        }
-    }
-</script>
 
 <body>
     <div id="wrapper">
-        <div id="navigation">
+        <div id="navigation" style="position: fixed;">
             <a class="checkbtn " onclick="showMenu()"> <i class="fa fa-bars"></i></a>
 
             </label>
 
             <div class="logo">
-                Become
+                <a href="index.html"> Become</a>
             </div>
 
             <div class="menu hide_menu" id="menu">
                 <ul>
                     <li>
-                        <a href="" title="Pricing">Pricing</a>
+                        <a href="pricing.html" title="Pricing">Pricing</a>
                     </li>
                     <li>
-                        <a href="" title="How it works">How it works</a>
+                        <a href="how-it-works.html" title="How it works">How it works</a>
                     </li>
                     <li>
-                        <a href="" title="Order Starter Kit">Order starter kit </a>
+                        <a href="order-starter-kit.html" title="Order Starter Kit">Order starter kit </a>
                     </li>
                     <li>
-                        <a href="" title="Book a Scan">book a scan</a>
+                        <a href="book-a-scan.html" title="Book a Scan">book a scan</a>
                     </li>
                     <li>
-                        <a href="" title="Get RM500">Get RM500</a>
+                        <a href="get-rm500.html" title="Get RM500">Get RM500</a>
                     </li>
                 </ul>
 
@@ -293,12 +281,11 @@
                                             </div>
                                             <div class="content">
                                                 <div class="image">
-                                                    <img src="data:image/png;base64,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"
-                                                        alt="" style="width: 100%;height: 100%;">
+                                                    <img src="https://cdn-yotpo-images-production.yotpo.com/Product/147942878/96620886/square.jpg?1580286637" alt="" style="width: 100%;height: 100%;">
                                                 </div>
                                                 <div class="text"><i>Just received my invisible braces
                                                 today and the quality feels very good for the price.</i></div>
-                                                <div class="read_more" style="color:red;margin-bottom: 10px;">
+                                                <div class="read_more" style="color:#ff6f61;margin-bottom: 10px;">
                                                     Read More
                                                 </div>
                                                 <div class="author">
@@ -321,12 +308,11 @@
                                             </div>
                                             <div class="content">
                                                 <div class="image">
-                                                    <img src="data:image/png;base64,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"
-                                                        alt="" style="width: 100%;height: 100%;">
+                                                    <img src="https://cdn-yotpo-images-production.yotpo.com/Product/147942878/96620886/square.jpg?1580286637" alt="" style="width: 100%;height: 100%;">
                                                 </div>
                                                 <div class="text"><i>Just received my invisible braces
                                                 today and the quality feels very good for the price.</i></div>
-                                                <div class="read_more" style="color:red;margin-bottom: 10px;">
+                                                <div class="read_more" style="color:#ff6f61;margin-bottom: 10px;">
                                                     Read More
                                                 </div>
                                                 <div class="author">
@@ -349,12 +335,11 @@
                                             </div>
                                             <div class="content">
                                                 <div class="image">
-                                                    <img src="data:image/png;base64,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"
-                                                        alt="" style="width: 100%;height: 100%;">
+                                                    <img src="https://cdn-yotpo-images-production.yotpo.com/Product/147942878/96620886/square.jpg?1580286637" alt="" style="width: 100%;height: 100%;">
                                                 </div>
                                                 <div class="text"><i>Just received my invisible braces
                                                 today and the quality feels very good for the price.</i></div>
-                                                <div class="read_more" style="color:red;margin-bottom: 10px;">
+                                                <div class="read_more" style="color:#ff6f61;margin-bottom: 10px;">
                                                     Read More
                                                 </div>
                                                 <div class="author">
@@ -555,7 +540,7 @@
                                 <ul class="redux-social-media-list clearfix">
                                     <li><a target="_blank" href="https://www.facebook.com/become.my/"><i
                                         class="fab fa-facebook"
-                                        style="color:rgb(255, 255, 255);background-color:transparent;"
+                                        style="color:rgb(255, 255, 255);background-color:transparent; "
                                         title=""></i></a>
                                     </li>
                                     <li><a target="_blank" href="https://www.instagram.com/become_msia/"><i
